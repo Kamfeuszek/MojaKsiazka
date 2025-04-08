@@ -16,7 +16,7 @@
         android:textSize="28dp" />
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:src="@drawable/book" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:orientation="horizontal" >
         <Button
             android:id="@+id/descriptionButton"
-            android:layout_width="100dp"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#64B5F6"
             android:textColor="#009688"
