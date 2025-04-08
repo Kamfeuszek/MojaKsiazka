@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        createNotificationChannels(this);
+        createNotificationChannel(this);
 
         descriptionButton = findViewById(R.id.descriptionButton);
         saveBookButton = findViewById(R.id.saveBookButton);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             sendNotification(2, CHANNEL_ID, this, this, "Moja książka", "Pamiętaj, aby znaleźć czas na lekturę!");
         });
     }
-    public static void createNotificationChannels(Context context) {
+    public static void createNotificationChannel(Context context) {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
